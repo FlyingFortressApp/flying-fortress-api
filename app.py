@@ -5,6 +5,10 @@ from cryptography.fernet import Fernet
 from datetime import datetime
 
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return "<h1>FLYING FORTRESS SECURITY</h1><p>Status: SISTEMA OPERACIONAL NA NUVEM - AGUARDANDO COMANDO</p>"
+
 
 # Carrega a mesma chave do sistema principal
 def carregar_chave():
