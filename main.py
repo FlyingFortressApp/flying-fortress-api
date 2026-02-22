@@ -22,7 +22,7 @@ class FlyingFortressGlobal(ctk.CTk):
         self.geometry("800x600")
         
         # URL DO SEU SERVIDOR (Ajustaremos quando subir para o Render)
-        self.url_servidor = "http://localhost:5000/registrar" 
+        self.url_servidor = "https://flying-fortress-security.onrender.com"
         
         self.tabview = ctk.CTkTabview(self, width=750, height=550)
         self.tabview.pack(padx=20, pady=20)
@@ -101,3 +101,4 @@ class FlyingFortressGlobal(ctk.CTk):
 if __name__ == "__main__":
     app = FlyingFortressGlobal()
     app.mainloop()
+
